@@ -1,0 +1,75 @@
+.cabecalho {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color:rgb(17, 43, 58);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.titulo {
+    color:ghostwhite;
+}
+
+body {
+    font-family: 'Poppins';
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+  color: #fde5e5;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.informacoes {
+    color: rgb(0, 0, 0);
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #f4f4f4;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: rgb(31, 113, 116);
+        display:none;
+        flex-direction: column;
+        color: rgb(250, 244, 238);
+        padding: 1rem;
+        border-radius: 0 0 0 8px;
+    }
+
+    .menu.show {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
