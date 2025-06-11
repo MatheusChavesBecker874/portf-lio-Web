@@ -45,23 +45,23 @@ nav ul li a {
 
 .menu-toggle {
   display: none;
-  font-size: 2rem;
+  font-size: 3rem;
   background: none;
   border: none;
   color: #f4f4f4;
   cursor: pointer;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 700000px) {
     .menu {
         position: absolute;
-        top: 60px;
+        top: 96px;
         right: 0;
         background-color: rgb(31, 113, 116);
         display:none;
         flex-direction: column;
         color: rgb(250, 244, 238);
-        padding: 1rem;
+        padding: 3rem;
         border-radius: 0 0 0 8px;
     }
 
@@ -71,5 +71,5 @@ nav ul li a {
 
     .menu-toggle {
         display: block;
-    }
+}
 }
